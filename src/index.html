@@ -26,7 +26,7 @@
         <div class="excuse-top">I need a new car because ...</div>
         <div class="excuse-bottom" x-show="!showGuessButton" x-text="currentExcuse"></div>
         <div class="generate-button-container" x-show="showGuessButton">
-            <div class="generate-button" x-on:click="guess">Generate excuse</div>
+            <button type="button" class="generate-button" x-on:click="guess">Generate excuse</button>
         </div>
     </body>
     <script>

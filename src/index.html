@@ -30,6 +30,17 @@
         </div>
     </body>
     <script>
+        function sizeViewport() {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+
+        sizeViewport();
+
+        window.addEventListener('resize', () => {
+            sizeViewport();
+        });
+
         function carFestival() {
             return {
                 showGuessButton: true,

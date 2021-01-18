@@ -61,7 +61,33 @@ body {
     transition: 0.25s;
 }
 
+.info-button {
+    font-size: 0.3rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 2px #000000 solid;
+    border-radius: 5vw;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
 .generate-button:hover {
     color: #000000;
     background-color: #FFFFFF;
+}
+
+.infobox {
+    display: none;
+    justify-content: start;
+    font-size: 0.25rem;
+    background-color:#F2E4DC;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    width: 80%;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+
 }

@@ -47,7 +47,7 @@ namespace :locally do
       task :build do
         run_locally do
           execute :npm, :install
-          execute :npm, "browserify:build"
+          execute :npm, :run, "browserify:build"
         end
       end
     end

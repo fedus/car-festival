@@ -47,7 +47,7 @@ namespace :locally do
       task :build do
         run_locally do
           execute :npm, :install
-          execute :browserify, :'src/js/main.js --standalone carFestival > src/js/carFestival.js'
+          execute :npm, "browserify:build"
         end
       end
     end

@@ -5,7 +5,9 @@
   "directories": {
     "lib": "lib"
   },
-  "scripts": {},
+  "scripts": {
+    "browserify:build": "browserify src/js/main.js --standalone carFestival > src/js/carFestival.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fedus/car-festival.git"

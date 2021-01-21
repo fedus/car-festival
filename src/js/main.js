@@ -1,3 +1,7 @@
+const Polyglot = require('node-polyglot');
+
+const polyglot = new Polyglot({});
+
 function sizeViewport() {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -11,6 +15,7 @@ window.addEventListener('resize', () => {
 
 function carFestival() {
     return {
+        language: new URLSearchParams(location.search).get('lang') || 'en',
         showGuessButton: true,
         guess() {
             this.startRandomExcuseGenerator();

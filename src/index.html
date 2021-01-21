@@ -27,15 +27,17 @@
         <div class="excuse-top"><h1>I need a new car because ...</h1></div>
         <div class="excuse-bottom" x-show="!showGuessButton" x-text="currentExcuse"></div>
         <div class="generate-button-container" x-show="showGuessButton">
-            <button type="button" class="generate-button" x-on:click="guess">Generate excuse</button>
+            <button type="modalbutton" class="generate-button" x-on:click="guess">Generate excuse</button>
+            <div class="modalposition"><a class="modalbutton" href="#popup1">What the hell is this?</a></div>
+
         </div>
 
-        <div class="generate-button-container">
-            <button type="button" class="info-button" onClick="openForm();">What the hell is this?</button>
-        </div>
 
 
-        <div class="infobox" id="infobox">
+        <div id="popup1" class="overlay">
+            <div class="popup">
+            <a class="close" href="#">&times;</a>
+
             <h2>What is your problem?</h2>
             <p>Glad you're asking. Luxembourg is a fabulous country and has perfect conditions for an efficient and modern public transit system. Yet, none of this is happening. While the government, on the surface, is promoting public transit and supporting initiatives such as funding electric bikes, building trams and so on at it's core, not much is changing. Instead we see dangerous driving, we see unfit bike lanes, we see a public transit that is not serving the people. This is peaking in the yearly tradition of the Autofestival which is a brilliant, yet dystopian piece in lobbying: instead of building on a public transit that serves everyone, car dealerships and the media are pushing an outdated agenda, benefitting the few, not helping the country moving forward. The excuse generator is a humorous approach for self reflection.</p>
             <h2>How can I make a real difference?</h2>
@@ -58,7 +60,7 @@
             <h2>Who is behind this?</h2>
             <p>This website is not affiliated with the Autosfestival or its organizing bodies in any way. This is a fun project by Thorben Grosser and Federico Gentile, both natives to Luxembourg.</p>
 
-            <p>Okay, whatever, <a href="#" onClick="closeForm();">close this box.</a></p>
+        </div>
         </div>
     </body>
     <script>
@@ -126,12 +128,6 @@
             };
         }
 
-        function openForm() {
-            document.getElementById("infobox").style.display = "block";
-        }
 
-        function closeForm() {
-            document.getElementById("infobox").style.display = "none";
-        }
     </script>
 </html>

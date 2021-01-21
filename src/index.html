@@ -8,11 +8,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Autofestival - Luxembourg 2021</title>
         <meta name="description" content="The Autofestival 2021 in Luxembourg is your yearly opportunity to do your part and take society back into the past, one SUV at a time.">
-        <meta name="keywords" content="car, festival, auto, autofestival, autosfestival, luxembourg, garage, voiture, pkw, solden, garagist, petrol, gas, oil, tanken, acl, suv, cabrio, van, minivan">
+        <meta name="keywords" content="car, festival, auto, autofestival, autosfestival, luxembourg, garage, voiture, pkw, solden, garagist, petrol, gas, oil, tanken, acl, suv, cabrio, van, minivan, bmw, mercedes, audi, vw">
         <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://www.autosfestival.lu/" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+        <meta http-equiv="content-language" content="en-gb">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,10 +24,43 @@
 
     </head>
     <body class="flex-container" x-data="carFestival()">
-        <div class="excuse-top">I need a new car because ...</div>
+        <div class="excuse-top"><h1>I need a new car because ...</h1></div>
         <div class="excuse-bottom" x-show="!showGuessButton" x-text="currentExcuse"></div>
         <div class="generate-button-container" x-show="showGuessButton">
-            <button type="button" class="generate-button" x-on:click="guess">Generate excuse</button>
+            <button type="modalbutton" class="generate-button" x-on:click="guess">Generate excuse</button>
+            <div class="modalposition"><a class="modalbutton" href="#popup1">What the hell is this?</a></div>
+
+        </div>
+
+
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+            <a class="close" href="#">&times;</a>
+
+            <h2>What is your problem?</h2>
+            <p>Glad you're asking. Luxembourg is a fabulous country and has perfect conditions for an efficient and modern public transit system. Yet, none of this is happening. While the government, on the surface, is promoting public transit and supporting initiatives such as funding electric bikes, building trams and so on at it's core, not much is changing. Instead we see dangerous driving, we see unfit bike lanes, we see a public transit that is not serving the people. This is peaking in the yearly tradition of the Autofestival which is a brilliant, yet dystopian piece in lobbying: instead of building on a public transit that serves everyone, car dealerships and the media are pushing an outdated agenda, benefitting the few, not helping the country moving forward. The excuse generator is a humorous approach for self reflection.</p>
+            <h2>How can I make a real difference?</h2>
+            <p>Banning cars is not helping anyone. Instead, here are three things you can do today:
+                <ol>
+                    <Li>Consider reducing the amount of cars you and your household own. While Luxembourg is not amazing right now to get around, keeping a car is a sensible decision if you live in the countryside. Not every adult in your household will need a car.</Li>
+                    <li>Consider using your bike as a means of transport, not as a sports instrument. If you are able-bodied, bikes can be easily used for any undertaking within a 10km range.</li>
+                    <li>Consider using public transit for any further trips. Reach out to your local mayor or aldermen and women to express your concerns getting around.</li>
+                </ol>
+            </p>
+            <h2>Where can I learn more?</h2>
+            <p>Here are a few great resources for English-speaking people:
+                <ul>
+                    <li>SiggyTheCyclists</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </p>
+            <h2>Who is behind this?</h2>
+            <p>This website is not affiliated with the Autosfestival or its organizing bodies in any way. This is a fun project by Thorben Grosser and Federico Gentile, both natives to Luxembourg.</p>
+
+        </div>
         </div>
     </body>
     <script>
@@ -93,5 +127,7 @@
                 },
             };
         }
+
+
     </script>
 </html>

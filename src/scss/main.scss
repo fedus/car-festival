@@ -22,6 +22,8 @@ h1 {
 
 .site-container {
     height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .flex-container {

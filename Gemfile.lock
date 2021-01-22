@@ -9,6 +9,10 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (>= 1.9.0)
+    capistrano-file-permissions (1.0.0)
+      capistrano (~> 3.0)
+    capistrano-tarball_scm (0.2.1)
+      capistrano (>= 3.7.0, < 4.0.0)
     concurrent-ruby (1.1.7)
     ed25519 (1.2.4)
     i18n (1.8.7)
@@ -27,6 +31,8 @@ PLATFORMS
 DEPENDENCIES
   bcrypt_pbkdf (~> 1.0)
   capistrano (~> 3.14)
+  capistrano-file-permissions
+  capistrano-tarball_scm
   ed25519 (~> 1.2)
 
 BUNDLED WITH

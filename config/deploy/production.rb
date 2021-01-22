@@ -59,3 +59,8 @@ server "krawallendapp", user: "deploy", roles: %w{web}
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+namespace :deploy do
+    after 'deploy:started', 'locally:browserify:build'
+    before "deploy:updated", "deploy:set_permissions:chmod"
+end

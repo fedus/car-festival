@@ -1,0 +1,23 @@
+{
+  "name": "car-festival",
+  "version": "1.0.0",
+  "description": "Don't buy a car.",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "browserify:build": "browserify src/js/main.js --standalone carFestival > src/js/carFestival.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedus/car-festival.git"
+  },
+  "author": "Federico Gentile",
+  "bugs": {
+    "url": "https://github.com/fedus/car-festival/issues"
+  },
+  "homepage": "https://github.com/fedus/car-festival#readme",
+  "dependencies": {
+    "node-polyglot": "^2.4.0"
+  }
+}

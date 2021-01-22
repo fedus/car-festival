@@ -7,7 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 server "dillendapp", user: "deployer", roles: %w{web}
-set :branch, 'develop'
+set :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 
 # role-based syntax
@@ -60,3 +60,8 @@ set :branch, 'develop'
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+namespace :deploy do
+    after 'deploy:started', 'locally:browserify:build'
+    before "deploy:updated", "deploy:set_permissions:chmod"
+end

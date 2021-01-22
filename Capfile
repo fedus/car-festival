@@ -48,6 +48,7 @@ namespace :locally do
         run_locally do
           execute :npm, :install
           execute :npm, :run, "browserify:build"
+          execute :npm, :run, "sass:build"
         end
       end
     end

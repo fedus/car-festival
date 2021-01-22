@@ -6,3 +6,6 @@ To run this:
 2) Install Browserify globally (`npm install -g browserify`)
 3) Run `npm install`
 4) Run from project root: `browserify main.js --standalone carFestival > carFestival.js`
+
+## Icons
+Icons made by Freepik (https://www.freepik.com) from www.flaticon.com

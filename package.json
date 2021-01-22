@@ -6,7 +6,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "browserify:build": "browserify src/js/main.js --standalone carFestival > src/js/carFestival.js"
+    "browserify:build": "browserify src/js/main.js --standalone carFestival > src/js/carFestival.js",
+    "sass:watch": "sass --no-source-map --watch src/scss/main.scss:src/css/main.css",
+    "sass:build": "sass --no-source-map src/scss/main.scss:src/css/main.css"
   },
   "repository": {
     "type": "git",

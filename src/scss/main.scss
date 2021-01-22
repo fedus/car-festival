@@ -1,18 +1,27 @@
-html {
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
-    width: 100vw;
-    font-size: 5vw;
-}
+$green: #7ceaa4;
+$purple: #3b3d54;
+$total: 10;
 
 html,
 body {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    font-size: 5vw;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1 {
     font-size: 0.75rem;
+}
+
+.site-container {
+    height: 100%;
 }
 
 .flex-container {
@@ -73,14 +82,15 @@ h1 {
 .modalposition {
     text-align: center;
 }
+
 .modalbutton {
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     font-family: 'Fira Sans Condensed', sans-serif;
     color: #000000;
     background-color: #FFFFFF;
     border: 2px #000000 solid;
     border-radius: 5vw;
-    padding: 5px 15px;
+    padding: 10px 30px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.25s;
@@ -148,15 +158,44 @@ h1 {
     max-height: 30%;
     overflow: auto;
 }
-  
-@media screen and (max-width: 700px){
-  
-    .box{
-      width: 70%;
-    }
-    .popup{
+
+@media screen and (max-width: 700px) {
+    .popup {
       width: 70%;
       font-size: 00.5em;
-
     }
+}
+
+.wrap{
+	perspective-origin: 50% 50%;
+}
+
+.svg {
+    fill: $green;
+	stroke: $green;
+	position: absolute;
+	bottom: -100vh;
+    transform-style: preserve-3d;
+    height: 150px;
+    width: 150px;
+}
+
+@for $i from 1 through $total {
+	$scale:random(2) - .4;
+
+	.svg:nth-child(#{$i}){
+		left:random(120) * 1% - 20;
+		animation: raise#{$i} 6 + random(15) +s linear infinite;
+		animation-delay:random(5) - 5 + s;
+		transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+		z-index: $i - 7;
+		filter: blur($i - 6 + px);
+
+	  @keyframes raise#{$i} {
+		  to{
+			 bottom:150vh;
+			 transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+			}
+		}
+	}
 }

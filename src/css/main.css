@@ -10,9 +10,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-size: 0.75rem;
 }
+
 .flex-container {
     display: flex;
     flex-flow: column;
@@ -61,7 +63,6 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     transition: 0.25s;
-    
 }
 
 .generate-button:hover {
@@ -89,10 +90,12 @@ h1 {
     margin-left: auto;
     margin-right: auto;
   }
-  .modalbutton:hover {
+
+.modalbutton:hover {
     background:black;
     color: white;
-  }
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -103,12 +106,14 @@ h1 {
     transition: opacity 0.5s;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  .popup {
+}
+
+.popup {
     font-size: 00.3em;
     font-family: 'Fira Sans Condensed', sans-serif;
     color: black;
@@ -122,8 +127,9 @@ h1 {
     transition: all 0.5s ease-in-out;
     overflow-x: hidden;
     overflow-y: auto;
-  }
-  .popup .close {
+}
+
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -132,16 +138,19 @@ h1 {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-  }
-  .popup .close:hover {
+}
+
+.popup .close:hover {
     color: #06D85F;
-  }
-  .popup .content {
+}
+
+.popup .content {
     max-height: 30%;
     overflow: auto;
-  }
+}
   
-  @media screen and (max-width: 700px){
+@media screen and (max-width: 700px){
+  
     .box{
       width: 70%;
     }
@@ -150,4 +159,4 @@ h1 {
       font-size: 00.5em;
 
     }
-  }
+}

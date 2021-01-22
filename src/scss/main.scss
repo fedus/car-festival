@@ -10,6 +10,10 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+
+    @media screen and (max-width: 700px) {
+        font-size: 7.5vw;
+    }
 }
 
 * {
@@ -41,7 +45,7 @@ h1 {
     font-size: 0.75rem;
     font-family: 'Fira Sans Condensed', sans-serif;
     margin: 0.5rem;
-    height: 50%;
+    height: 40%;
 }
 
 .excuse-bottom {
@@ -52,15 +56,15 @@ h1 {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
     margin: 0.5rem;
-    height: 50%;
+    height: 60%;
 }
 
 .generate-button-container {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     flex-direction: column;
     margin: 0.5rem;
-    height: 50%;
+    height: 60%;
 }
 
 .generate-button {
@@ -86,7 +90,7 @@ h1 {
 }
 
 .modalbutton {
-    font-size: 0.25rem;
+    font-size: 0.4rem;
     font-family: 'Fira Sans Condensed', sans-serif;
     color: #000000;
     background-color: #FFFFFF;
@@ -134,7 +138,7 @@ h1 {
     background: #fff;
     border-radius: 5px;
     width: 60%;
-    height: 50%;
+    height: 80%;
     position: relative;
     transition: all 0.5s ease-in-out;
     overflow-x: hidden;

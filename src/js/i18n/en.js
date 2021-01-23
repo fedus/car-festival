@@ -25,7 +25,10 @@ const en = {
         family: "my dad owned a car, so I own a car",
         society: "I don't care about society",
         valuable: "I have given up on being a valuable member to society",
-        covid: "I'm afraid of COVID-19"
+        covid: "I'm afraid of COVID-19",
+        selfish: "I'm selfish",
+        traffic: 'I like being stuck in traffic',
+        scandal: "I think the emissions scandal wasn't bad enough yet"
     }
 }
 

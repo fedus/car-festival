@@ -25,7 +25,10 @@ const lb = {
         family: "mäi Papp en Auto hat, also hunn ech och een",
         society: "mir d'Gesellschaft egal ass",
         valuable: "ech opginn hunn e responsablen Matmënsch ze sinn",
-        covid: "ech Angscht virun COVID-19 hunn"
+        covid: "ech Angscht virun COVID-19 hunn",
+        selfish: 'ech egoistesch sinn',
+        traffic: 'ech gären am Stau stinn',
+        scandal: 'den Dieselskandal mer nach net schlëmm genuch war'
     }
 }
 

@@ -1,4 +1,7 @@
 const en = {
+    generateExcuse: 'Generate excuse',
+    needNewCar: 'I need a new car because ...',
+    whatIsThis: 'What the hell is this?',
     excuses: {
         insecure: "I'm insecure",
         money: 'I have too much money',

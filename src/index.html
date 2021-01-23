@@ -41,12 +41,11 @@
     <body>
         <div class="site-container">
             <div class="flex-container" x-data="carFestival.carFestival()">
-                <div class="excuse-top"><h1>I need a new car because ...</h1></div>
+                <div class="excuse-top"><h1 x-text="polyglot.t('needNewCar')"></h1></div>
                 <div class="excuse-bottom" x-show="!showGuessButton" x-text="currentExcuse"></div>
                 <div class="generate-button-container" x-show="showGuessButton">
-                    <button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);">Generate excuse</button>
-                    <div class="modalposition"><a class="modalbutton" href="#popup1">What the hell is this?</a></div>
-
+                    <div><button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);" x-text="polyglot.t('generateExcuse')"></button></div>
+                    <div class="modalposition"><a class="modalbutton" href="#popup1" x-text="polyglot.t('whatIsThis')"></a></div>
                 </div>
 
 
@@ -88,7 +87,7 @@
                         <h2>Where can I learn more?</h2>
                         <p>Here are a few great resources for English-speaking people:</p>
                         <ul>
-                            <li>SiggyTheCyclists</li>
+                            <li>SiggyTheCyclist</li>
                             <li>Link 2</li>
                             <li>Link 3</li>
                             <li>Link 4</li>
@@ -96,7 +95,7 @@
                         <h2>Who is behind this?</h2>
                         <p>
                             This website is not affiliated with the Autosfestival or its organizing bodies in any way.
-                            This is a fun project by Thorben Grosser and Federico Gentile, both natives to Luxembourg.
+                            This is a fun project by Pannemann and no0dle.
                         </p>
                     </div>
                 </div>

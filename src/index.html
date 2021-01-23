@@ -21,6 +21,22 @@
 
         <script src="js/carFestival.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+        <!-- Matomo -->
+        <script type="text/javascript">
+            var _paq = window._paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="//analytics.thorben.io/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+  
     </head>
     <body>
         <div class="site-container">
@@ -28,9 +44,8 @@
                 <div class="excuse-top"><h1 x-text="polyglot.t('needNewCar')"></h1></div>
                 <div class="excuse-bottom" x-show="!showGuessButton" x-text="currentExcuse"></div>
                 <div class="generate-button-container" x-show="showGuessButton">
-                    <div><button type="button" class="generate-button" x-on:click="guess" x-text="polyglot.t('generateExcuse')"></button></div>
+                    <div><button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);" x-text="polyglot.t('generateExcuse')"></button></div>
                     <div class="modalposition"><a class="modalbutton" href="#popup1" x-text="polyglot.t('whatIsThis')"></a></div>
-
                 </div>
 
 

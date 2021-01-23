@@ -1,5 +1,5 @@
 const en = {
-    generateExcuse: 'Generate excuse',
+    generateButton: 'Discover why!',
     needNewCar: 'I need a new car because ...',
     whatIsThis: 'What the hell is this?',
     excuses: {

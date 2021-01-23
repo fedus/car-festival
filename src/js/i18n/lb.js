@@ -1,5 +1,5 @@
 const lb = {
-    generateExcuse: 'Excuse generéieren',
+    generateButton: 'Fann eraus firwat!',
     needNewCar: 'Ech brauch en neien Auto well ...',
     whatIsThis: 'Wat der Däiwel ass dat hei?',
     excuses: {

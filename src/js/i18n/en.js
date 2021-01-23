@@ -28,7 +28,8 @@ const en = {
         covid: "I'm afraid of COVID-19",
         selfish: "I'm selfish",
         traffic: 'I like being stuck in traffic',
-        scandal: "I think the emissions scandal wasn't bad enough yet"
+        scandal: "I think the emissions scandal wasn't bad enough yet",
+        inspection: "vehicle inspections are good fun"
     }
 }
 

@@ -28,7 +28,8 @@ const lb = {
         covid: "ech Angscht virun COVID-19 hunn",
         selfish: 'ech egoistesch sinn',
         traffic: 'ech gären am Stau stinn',
-        scandal: 'den Dieselskandal mer nach net schlëmm genuch war'
+        scandal: 'den Dieselskandal mer nach net schlëmm genuch war',
+        inspection: "Sandweiler Nervenkitzel pur ass"
     }
 }
 

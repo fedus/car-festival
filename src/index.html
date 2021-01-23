@@ -42,12 +42,15 @@
         <div class="site-container">
             <div class="flex-container" x-data="carFestival.carFestival()">
                 <div class="excuse-top"><h1 x-text="polyglot.t('needNewCar')"></h1></div>
-                <div class="excuse-bottom" x-show="!showGuessButton" x-text="currentExcuse"></div>
-                <div class="generate-button-container" x-show="showGuessButton">
-                    <button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);" x-text="polyglot.t('generateButton')"></button>
-                    <div class="modalposition"><a class="modalbutton" href="#popup1" x-text="polyglot.t('whatIsThis')"></a></div>
+                <div class="excuse-bottom">
+                    <div class="excuse-text" x-bind:class="{ 'absolute-position': noGuessYet }" x-text="currentExcuse" x-show.transition="showExcuse"></div>
+                    <div class="button-container" x-show.transition="showGuessButton">
+                        <div class="generate-button-container">
+                            <button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);" x-text="currentGenerateButtonLabel"></button>
+                        </div>
+                        <div class="modalposition"><a class="modalbutton" href="#popup1" x-text="polyglot.t('whatIsThis')"></a></div>
+                    </div>
                 </div>
-
 
 
                 <div id="popup1" class="overlay">

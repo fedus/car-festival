@@ -1,5 +1,6 @@
 const lb = {
     generateButton: 'Fann eraus firwat!',
+    generateButtonAgain: 'Nach eng Kéier ...',
     needNewCar: 'Ech brauch en neien Auto well ...',
     whatIsThis: 'Wat der Däiwel ass dat hei?',
     excuses: {

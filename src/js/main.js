@@ -35,9 +35,13 @@ function carFestival() {
     return {
         polyglot,
         showGuessButton: true,
+        showExcuse: false,
+        noGuessYet: true,
         guess() {
             this.startRandomExcuseGenerator();
+            this.showExcuse = true;
             this.showGuessButton = false;
+            this.currentGenerateButtonLabel = polyglot.t('generateButtonAgain');
         },
         excusePrefix: '...',
         excuses: excuses_keys,
@@ -45,6 +49,7 @@ function carFestival() {
         generatorMaxMs: 150,
         maxGeneratorSteps: 15,
         currentGeneratorStep: 0,
+        currentGenerateButtonLabel: polyglot.t('generateButton'),
         getRandomExcuse() {
             this.currentExcuse = `${this.excusePrefix} ${polyglot.t(`excuses.${this.excuses[Math.floor(Math.random() * this.excuses.length)]}`)}`;
         },
@@ -57,6 +62,9 @@ function carFestival() {
             if (this.currentGeneratorStep < this.maxGeneratorSteps) {
                 this.currentGeneratorStep++;
                 setTimeout(this.randomExcuseGeneratorStep.bind(this), this.generatorMaxMs/(this.maxGeneratorSteps/this.currentGeneratorStep))
+            } else {
+                this.noGuessYet = false;
+                this.showGuessButton = true;
             }
             this.getRandomExcuse();
         },

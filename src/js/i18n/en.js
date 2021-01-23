@@ -1,5 +1,6 @@
 const en = {
     generateButton: 'Discover why!',
+    generateButtonAgain: 'Again ...',
     needNewCar: 'I need a new car because ...',
     whatIsThis: 'What the hell is this?',
     excuses: {

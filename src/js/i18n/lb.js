@@ -19,7 +19,7 @@ const lb = {
         smell_gas: "ech de Geroch vu Bensin gären hunn",
         right: "et mäi gottverdaamt Grondrecht ass",
         dealership: "ech de Geroch vu mengem Concessionaire gären hunn",
-        hospital: "ech mäi Partner an dem extrem seltene Fall vun engem Noutfall gären an d'Klinik bréngen",
+        hospital: "e Noutfall kéint geschéien, egal wéi onwahrscheinlech",
         poor: "nëmmen aarm Leit ëffentlechen Transport benotzen",
         tram: "ech dem François Bausch säin Tram net gären hunn",
         family: "mäi Papp en Auto hat, also hunn ech och een",
@@ -29,7 +29,8 @@ const lb = {
         selfish: 'ech egoistesch sinn',
         traffic: 'ech gären am Stau stinn',
         scandal: 'den Dieselskandal mer nach net schlëmm genuch war',
-        inspection: "Sandweiler Nervenkitzel pur ass"
+        inspection: "Sandweiler Nervenkitzel pur ass",
+        industry: "d'Autosindustrie meng Ënnerstëtzung braucht"
     }
 }
 

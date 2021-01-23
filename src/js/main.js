@@ -2,10 +2,12 @@ const Polyglot = require('node-polyglot');
 
 const en = require('./i18n/en.js');
 const lb = require('./i18n/lb.js');
+const de = require('./i18n/de.js');
 
 const locales = {
     en,
     lb,
+    de,
 };
 
 function getCurrentLocale() {
@@ -14,11 +16,11 @@ function getCurrentLocale() {
     return locales[searchParamLocale] && searchParamLocale || 'en';
 }
 
-const current_locale = getCurrentLocale();
+const currentLocale = getCurrentLocale();
 
 const excuses_keys = Object.keys(en.excuses);
 
-const polyglot = new Polyglot({phrases: locales[current_locale]});
+const polyglot = new Polyglot({phrases: locales[currentLocale]});
 
 function sizeViewport() {
     const vh = window.innerHeight * 0.01;
@@ -34,6 +36,8 @@ window.addEventListener('resize', () => {
 function carFestival() {
     return {
         polyglot,
+        currentLocale,
+        availableLocales: Object.keys(locales),
         showGuessButton: true,
         showExcuse: false,
         noGuessYet: true,

@@ -1,7 +1,7 @@
 const lb = {
     generateButton: 'Fann eraus firwat!',
     generateButtonAgain: 'Nach eng Kéier ...',
-    needNewCar: 'Ech brauch en neien Auto well ...',
+    needNewCar: 'Ech brauch e neien Auto well ...',
     whatIsThis: 'Wat der Däiwel ass dat hei?',
     excuses: {
         insecure: "ech onsécher sinn",

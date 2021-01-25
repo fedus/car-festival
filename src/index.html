@@ -44,7 +44,7 @@
             })();
         </script>
         <!-- End Matomo Code -->
-
+        <meta property='og:image' content='https://www.autosfestival.lu/sharepic.png'/>
     </head>
     <body>
         <div class="site-container">
@@ -63,7 +63,7 @@
                         <div class="generate-button-container">
                             <button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);" x-text="currentGenerateButtonLabel"></button>
                         </div>
-                        <div class="modalposition"><a class="modalbutton" href="#popup1" x-text="polyglot.t('whatIsThis')"></a></div>
+                        <div class="modalposition"><a class="modalbutton" href="#popup1" x-text="polyglot.t('whatIsThis')"  onClick="_paq.push(['trackEvent', 'Button', 'Infobox', 'true']);"></a></div>
                     </div>
                 </div>
 

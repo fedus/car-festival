@@ -1,4 +1,8 @@
 const en = {
+    generateButton: 'Discover why!',
+    generateButtonAgain: 'Again ...',
+    needNewCar: 'I need a new car because ...',
+    whatIsThis: 'What the hell is this?',
     excuses: {
         insecure: "I'm insecure",
         money: 'I have too much money',
@@ -15,13 +19,18 @@ const en = {
         smell_gas: "I like the smell of gas",
         right: "it is my god-given right",
         dealership: "I like the smell of my car dealership",
-        hospital: "I want to be able to drive my partner to the hospital in the extremely unlikely case of an emergency",
+        hospital: "an emergency might occur, however unlikely",
         poor: "only poor people take public transport",
         tram: "I don't like François Bausch's tram",
         family: "my dad owned a car, so I own a car",
         society: "I don't care about society",
         valuable: "I have given up on being a valuable member to society",
-        covid: "I'm afraid of COVID-19"
+        covid: "I'm afraid of COVID-19",
+        selfish: "I'm selfish",
+        traffic: 'I like being stuck in traffic',
+        scandal: "I think the emissions scandal wasn't bad enough yet",
+        inspection: "vehicle inspections are good fun",
+        industry: 'the car industry needs my support'
     }
 }
 

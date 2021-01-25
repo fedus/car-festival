@@ -1,0 +1,275 @@
+$green: #7ceaa4;
+$purple: #3b3d54;
+$total: 10;
+
+html,
+body {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    font-size: 5vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    @media screen and (max-width: 700px) {
+        font-size: 7.5vw;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 0.55rem;
+}
+
+.site-container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.language-switch-container {
+    height: 10%;
+    font-size: 30px;
+    padding-top: 10px;
+
+    @media screen and (max-width: 700px) {
+        font-size: 15px;
+    }
+}
+
+.language-switch {
+    display: flex;
+    flex-direction: row;
+}
+
+.lang {
+    padding: 5px 10px;
+    border: 2px solid #000000;
+    border-right: 0;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.25s;
+
+    &:first-of-type {
+        border-radius: 5vw 0 0 5vw;
+    }
+
+    &:last-of-type {
+        border-right: 2px solid black;
+        border-radius: 0 5vw 5vw 0;
+    }
+
+    &.lang-selected,
+    &:hover {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+}
+
+.excuse-top {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin: 0.5rem;
+    height: 20%;
+}
+
+.excuse-bottom {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    margin: 0.5rem;
+    height: 70%;
+    width: 100%;
+    position: relative;
+}
+
+.excuse-text {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.absolute-position {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.generate-button {
+    font-size: 0.35rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 2px #000000 solid;
+    border-radius: 5vw;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.generate-button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.modalposition {
+    text-align: center;
+}
+
+.modalbutton {
+    font-size: 0.35rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px #000000 solid;
+    border-radius: 5vw;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.modalbutton:hover {
+    background:black;
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    font-size: 00.3em;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: black;
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 60%;
+    height: 80%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .popup {
+      width: 70%;
+      font-size: 00.5em;
+    }
+}
+
+.social-footer {
+    position: absolute;
+    bottom: 15px;
+}
+
+.twitter-logo {
+    width: 10vw;
+    max-width: 100px;
+    height: 10vw;
+    max-height: 100px;
+    transition: 0.25s;
+
+    &:hover {
+        filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, .9));
+    }
+}
+
+.wrap{
+	perspective-origin: 50% 50%;
+}
+
+.svg {
+    fill: $green;
+	stroke: $green;
+	position: absolute;
+	bottom: -100vh;
+    transform-style: preserve-3d;
+    height: 10%;
+    width: 10%;
+}
+
+@for $i from 1 through $total {
+	$scale:random(2) - .4;
+
+	.svg:nth-child(#{$i}){
+		left:random(120) * 1% - 20;
+		animation: raise#{$i} 6 + random(15) +s linear infinite;
+		animation-delay:random(5) - 5 + s;
+		transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+		z-index: $i - 7;
+		filter: blur($i - 6 + px);
+
+	  @keyframes raise#{$i} {
+		  to{
+			 bottom:150vh;
+			 transform: scale(.3 * $i - .6) rotate(random(360) + deg);
+			}
+		}
+	}
+}

@@ -1,9 +1,26 @@
 const Polyglot = require('node-polyglot');
+
 const en = require('./i18n/en.js');
+const lb = require('./i18n/lb.js');
+const de = require('./i18n/de.js');
+
+const locales = {
+    en,
+    lb,
+    de,
+};
+
+function getCurrentLocale() {
+    searchParamLocale = new URLSearchParams(location.search).get('lang') || 'en';
+
+    return locales[searchParamLocale] && searchParamLocale || 'en';
+}
+
+const currentLocale = getCurrentLocale();
 
 const excuses_keys = Object.keys(en.excuses);
 
-const polyglot = new Polyglot({phrases: en});
+const polyglot = new Polyglot({phrases: locales[currentLocale]});
 
 function sizeViewport() {
     const vh = window.innerHeight * 0.01;
@@ -18,11 +35,17 @@ window.addEventListener('resize', () => {
 
 function carFestival() {
     return {
-        language: new URLSearchParams(location.search).get('lang') || 'en',
+        polyglot,
+        currentLocale,
+        availableLocales: Object.keys(locales),
         showGuessButton: true,
+        showExcuse: false,
+        noGuessYet: true,
         guess() {
             this.startRandomExcuseGenerator();
+            this.showExcuse = true;
             this.showGuessButton = false;
+            this.currentGenerateButtonLabel = polyglot.t('generateButtonAgain');
         },
         excusePrefix: '...',
         excuses: excuses_keys,
@@ -30,6 +53,7 @@ function carFestival() {
         generatorMaxMs: 150,
         maxGeneratorSteps: 15,
         currentGeneratorStep: 0,
+        currentGenerateButtonLabel: polyglot.t('generateButton'),
         getRandomExcuse() {
             this.currentExcuse = `${this.excusePrefix} ${polyglot.t(`excuses.${this.excuses[Math.floor(Math.random() * this.excuses.length)]}`)}`;
         },
@@ -42,6 +66,9 @@ function carFestival() {
             if (this.currentGeneratorStep < this.maxGeneratorSteps) {
                 this.currentGeneratorStep++;
                 setTimeout(this.randomExcuseGeneratorStep.bind(this), this.generatorMaxMs/(this.maxGeneratorSteps/this.currentGeneratorStep))
+            } else {
+                this.noGuessYet = false;
+                this.showGuessButton = true;
             }
             this.getRandomExcuse();
         },

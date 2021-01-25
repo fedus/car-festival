@@ -3,11 +3,13 @@ const Polyglot = require('node-polyglot');
 const en = require('./i18n/en.js');
 const lb = require('./i18n/lb.js');
 const de = require('./i18n/de.js');
+const fr = require('./i18n/fr.js');
 
 const locales = {
     en,
     lb,
     de,
+    fr,
 };
 
 function getCurrentLocale() {

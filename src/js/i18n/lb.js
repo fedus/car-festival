@@ -18,7 +18,7 @@ const lb = {
         smell_bus: "ech denken Leit déi de Bus huelen sténken",
         smell_gas: "ech de Geroch vu Bensin gären hunn",
         right: "et mäi gottverdaamt Grondrecht ass",
-        dealership: "ech de Geroch vu mengem Concessionaire gären hunn",
+        dealership: "ech de Geroch vu mengem Concessionnaire gären hunn",
         hospital: "e Noutfall kéint geschéien, egal wéi onwahrscheinlech",
         poor: "nëmmen aarm Leit ëffentlechen Transport benotzen",
         tram: "ech dem François Bausch säin Tram net gären hunn",

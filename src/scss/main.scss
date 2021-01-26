@@ -2,6 +2,34 @@ $green: #7ceaa4;
 $purple: #3b3d54;
 $total: 10;
 
+/* fira-sans-condensed-regular - latin */
+@font-face {
+    font-family: 'Fira Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fira-sans-condensed-v4-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/fira-sans-condensed-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/fira-sans-condensed-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/fira-sans-condensed-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/fira-sans-condensed-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/fira-sans-condensed-v4-latin-regular.svg#FiraSansCondensed') format('svg'); /* Legacy iOS */
+}
+
+/* permanent-marker-regular - latin */
+@font-face {
+    font-family: 'Permanent Marker';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/permanent-marker-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/permanent-marker-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/permanent-marker-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/permanent-marker-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/permanent-marker-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/permanent-marker-v10-latin-regular.svg#PermanentMarker') format('svg'); /* Legacy iOS */
+}
+
 html,
 body {
     height: calc(var(--vh, 1vh) * 100);

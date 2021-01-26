@@ -11,7 +11,7 @@ const en = {
         neighbour: 'my neighbour got one too',
         vain: "I'm vain",
         alternatives: 'I never think about alternatives',
-        unfit: "I'm unfit",
+        unfit: "I'm out of shape",
         bigoil: 'I like big oil',
         bored: "I'm bored",
         care: "I don't care",

@@ -3,6 +3,8 @@ const de = {
     generateButtonAgain: 'Nochmal ...',
     needNewCar: 'Ich brauche ein neues Auto weil ...',
     whatIsThis: 'Was zum Teufel ist das hier?',
+    shareOnTwitter: 'Teile diesen Grund auf Twitter!',
+    shareText: "Mein Grund für ein neues Auto ist dass %{reason}! Und deiner? Finde es heraus auf",
     excuses: {
         insecure: "ich unsicher bin",
         money: 'ich zu viel Geld habe',

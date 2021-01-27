@@ -3,6 +3,8 @@ const lb = {
     generateButtonAgain: 'Nach eng Kéier ...',
     needNewCar: 'Ech brauch e neien Auto well ...',
     whatIsThis: 'Wat der Däiwel ass dat hei?',
+    shareOnTwitter: 'Deel dëse Grond op Twitter!',
+    shareText: "Mäi Grond fir en neien Auto ass dat %{reason}! And däin? Fann et eraus op",
     excuses: {
         insecure: "ech onsécher sinn",
         money: 'ech zevill Suen hunn',

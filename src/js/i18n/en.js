@@ -3,6 +3,8 @@ const en = {
     generateButtonAgain: 'Again ...',
     needNewCar: 'I need a new car because ...',
     whatIsThis: 'What the hell is this?',
+    shareOnTwitter: 'Share this reason on Twitter!',
+    shareText: "My reason for getting a new car is that %{reason}! What's yours? Find it out on",
     excuses: {
         insecure: "I'm insecure",
         money: 'I have too much money',

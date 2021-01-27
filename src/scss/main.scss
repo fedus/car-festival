@@ -146,6 +146,24 @@ h1 {
     margin: 0.5rem;
 }
 
+.share-button {
+    font-size: 0.35rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #FFFFFF;
+    background-color: #55acee;
+    border: 2px #55acee solid;
+    border-radius: 5vw;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: 0.25s;
+    text-decoration: none;
+
+    &:hover {
+        color: #55acee;
+        background-color: #FFFFFF;
+    }
+}
+
 .generate-button {
     font-size: 0.35rem;
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -157,11 +175,11 @@ h1 {
     font-weight: bold;
     cursor: pointer;
     transition: 0.25s;
-}
 
-.generate-button:hover {
-    color: #000000;
-    background-color: #FFFFFF;
+    &:hover {
+        color: #000000;
+        background-color: #FFFFFF;
+    }
 }
 
 .modalposition {

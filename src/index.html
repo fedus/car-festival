@@ -66,7 +66,9 @@
                 <div class="excuse-bottom">
                     <div class="excuse-text" x-bind:class="{ 'absolute-position': noGuessYet }" x-text="currentExcuse" x-show.transition="showExcuse"></div>
                     <div class="button-container" x-show.transition="showGuessButton">
-                        <div class="generate-button-container">
+                        <div class="generate-and-share-button-container">
+                            <a class="share-button" x-show="!noGuessYet" x-bind:href="twitterShareLink" onClick="_paq.push(['trackEvent', 'Button', 'Share', 'true']);" x-text="polyglot.t('shareOnTwitter')"></a>
+
                             <button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);" x-text="currentGenerateButtonLabel"></button>
                         </div>
                         <div class="modalposition"><a class="modalbutton" href="#popup1" x-text="polyglot.t('whatIsThis')"  onClick="_paq.push(['trackEvent', 'Button', 'Infobox', 'true']);"></a></div>

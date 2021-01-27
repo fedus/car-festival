@@ -30,7 +30,15 @@ const lb = {
         traffic: 'ech gären am Stau stinn',
         scandal: 'den Dieselskandal mer nach net schlëmm genuch war',
         inspection: "Sandweiler Nervenkitzel pur ass",
-        industry: "d'Autosindustrie meng Ënnerstëtzung braucht"
+        industry: "d'Autosindustrie meng Ënnerstëtzung braucht",
+        defrosting: "ech am Wanter gären d'Fënstren fräikrazen",
+        betterbehind: "et méi cool ass hannert dem Bus ze hänken wéi am Bus",
+        water: 'ech eng méi grouss Mall brauch fir all déi Waasserfläschen',
+        rain: 'et vläit wäert reenen, oder och net',
+        fortress: 'Lëtzebuerg eng Festungsstad ass',
+        greens: 'ech gär fueren wëll ier déi verdaamte Gréng alles verbidden',
+        continue: 'ech mengen mir kënnen fir ëmmer esou weidermaachen',
+        old: "mäin aktuellen SUV schon 2 Joër huet",
     }
 }
 

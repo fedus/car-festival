@@ -30,7 +30,15 @@ const de = {
         traffic: 'ich gerne im Stau stehe',
         scandal: "der Dieselskandal mir noch nicht schlimm genug war",
         inspection: "zum TÜV gehen Spaß macht",
-        industry: 'die Autoindustrie meine Unterstützung braucht'
+        industry: 'die Autoindustrie meine Unterstützung braucht',
+        defrosting: 'die Fenster im Winter enteisen Spaß macht',
+        betterbehind: 'es lässiger ist hinter dem Bus zu hängen, als im Bus',
+        water: 'ich einen größeren Kofferraum für all die Wasserflaschen brauche',
+        rain: 'es regnet vielleicht, oder auch nicht',
+        fortress: 'Luxemburg-Stadt eine Festungsstadt ist',
+        greens: 'ich gerne fahre bevor die verdammten Grünen alles verbieten',
+        continue: 'ich glaube wir können für immer so weitermachen',
+        old: "mein aktueller SUV schon 2 Jahre alt ist",
     }
 }
 

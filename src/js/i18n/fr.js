@@ -30,7 +30,15 @@ const fr = {
         traffic: "j'aime perdre mon temps dans les bouchons",
         scandal: "le scandale du \"Dieselgate\" n'était pas encore assez grave",
         inspection: "les inspections de véhicule sont le fun",
-        industry: "l'industrie automobile a besoin de mon soutien"
+        industry: "l'industrie automobile a besoin de mon soutien",
+        defrosting: "j'aime dégivrer les fenêtres",
+        betterbehind: "c'est plus rigolo d'être bloqué derrière le bus que dedans",
+        water: "j'ai besoin d'un coffre plus grand pour toutes ces bouteilles d'eau",
+        rain: 'il pourrait pleuvoir, ou pas',
+        fortress: 'Luxembourg-Ville est une forteresse',
+        greens: "je veux conduire avant que les Verts n'interdisent tout",
+        continue: "je pense qu'on peut continuer comme ça pour toujours",
+        old: "mon SUV actual à déjà 2 ans",
     }
 }
 

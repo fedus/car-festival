@@ -30,7 +30,15 @@ const en = {
         traffic: 'I like being stuck in traffic',
         scandal: "I think the emissions scandal wasn't bad enough yet",
         inspection: "vehicle inspections are good fun",
-        industry: 'the car industry needs my support'
+        industry: 'the car industry needs my support',
+        defrosting: 'defrosting the windows gets me going',
+        betterbehind: "it's more fun to be stuck behind the bus than in the bus",
+        water: 'I need a bigger trunk to carry all that bottled water',
+        rain: 'it might rain, or maybe not',
+        fortress: 'because Luxembourg is a fortress',
+        greens: 'I want to drive before the damn Greens prohibit everything',
+        continue: 'I think we can continue like this forever',
+        old: "my current SUV is already 2 years old",
     }
 }
 

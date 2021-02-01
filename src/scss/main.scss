@@ -164,6 +164,30 @@ h1 {
     }
 }
 
+.share-button-whatsapp {
+    display: none;
+    font-size: 0.35rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #FFFFFF;
+    background-color: #25D366;
+    border: 2px #25D366 solid;
+    border-radius: 5vw;
+    padding: 10px 30px;
+    font-weight: bold;
+    transition: 0.25s;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:hover {
+        color: #25D366;
+        background-color: #FFFFFF;
+    }
+
+    @media screen and (max-width: 700px) {
+        display: unset;
+    }
+}
+
 .generate-button {
     font-size: 0.35rem;
     font-family: 'Fira Sans Condensed', sans-serif;

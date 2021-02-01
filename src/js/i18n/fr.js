@@ -4,6 +4,7 @@ const fr = {
     needNewCar: "J'ai besoin d'une nouvelle voiture car ...",
     whatIsThis: "Qu'est-ce que c'est que ça?",
     shareOnTwitter: 'Partage cette raison sur Twitter!',
+    shareOnWhatsApp: 'Partage cette raison sur WhatsApp!',
     shareText: "Voici ma raison d'acheter une nouvelle bagnole: %{reason}! Découvre la tienne sur",
     excuses: {
         insecure: "je ne suis pas sûr•e de moi",
@@ -40,7 +41,7 @@ const fr = {
         fortress: 'Luxembourg-Ville est une forteresse',
         greens: "je veux conduire avant que les Verts n'interdisent tout",
         continue: "je pense qu'on peut continuer comme ça pour toujours",
-        old: "mon SUV actual à déjà 2 ans",
+        old: "mon SUV actuel à déjà 2 ans",
     }
 }
 

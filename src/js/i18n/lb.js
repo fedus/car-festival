@@ -4,6 +4,7 @@ const lb = {
     needNewCar: 'Ech brauch e neien Auto well ...',
     whatIsThis: 'Wat der Däiwel ass dat hei?',
     shareOnTwitter: 'Deel dëse Grond op Twitter!',
+    shareOnWhatsApp: 'Deel dëse Grond op WhatsApp!',
     shareText: "Mäi Grond fir en neien Auto ass dat %{reason}! And däin? Fann et eraus op",
     excuses: {
         insecure: "ech onsécher sinn",

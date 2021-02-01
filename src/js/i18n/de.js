@@ -4,6 +4,7 @@ const de = {
     needNewCar: 'Ich brauche ein neues Auto weil ...',
     whatIsThis: 'Was zum Teufel ist das hier?',
     shareOnTwitter: 'Teile diesen Grund auf Twitter!',
+    shareOnWhatsApp: 'Teile diesen Grund auf WhatsApp!',
     shareText: "Mein Grund für ein neues Auto ist dass %{reason}! Und deiner? Finde es heraus auf",
     excuses: {
         insecure: "ich unsicher bin",

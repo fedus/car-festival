@@ -67,7 +67,8 @@
                     <div class="excuse-text" x-bind:class="{ 'absolute-position': noGuessYet }" x-text="currentExcuse" x-show.transition="showExcuse"></div>
                     <div class="button-container" x-show.transition="showGuessButton">
                         <div class="generate-and-share-button-container">
-                            <a class="share-button" x-show="!noGuessYet" x-bind:href="twitterShareLink" onClick="_paq.push(['trackEvent', 'Button', 'Share', 'true']);" x-text="polyglot.t('shareOnTwitter')"></a>
+                            <a class="share-button" x-show="!noGuessYet" x-bind:href="twitterShareLink" onClick="_paq.push(['trackEvent', 'Button', 'ShareTwitter', 'true']);" x-text="polyglot.t('shareOnTwitter')"></a>
+                            <a class="share-button-whatsapp" x-show="!noGuessYet" x-bind:href="whatsappShareLink" onClick="_paq.push(['trackEvent', 'Button', 'ShareWhatsApp', 'true']);" x-text="polyglot.t('shareOnWhatsApp')"></a>
 
                             <button type="button" class="generate-button" x-on:click="guess" onClick="_paq.push(['trackEvent', 'Button', 'Excuse', 'true']);" x-text="currentGenerateButtonLabel"></button>
                         </div>

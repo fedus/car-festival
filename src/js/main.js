@@ -58,6 +58,7 @@ function carFestival() {
         currentGenerateButtonLabel: polyglot.t('generateButton'),
         twitterShareLink: 'https://twitter.com',
         whatsappShareLink: 'whatsapp://send?text=Autosfestival',
+        facebookShareLink: 'https://www.facebook.com/sharer.php?u=htts://autosfestival.lu',
         getRandomExcuse() {
             this.currentExcuse = `${this.excusePrefix} ${polyglot.t(`excuses.${this.excuses[Math.floor(Math.random() * this.excuses.length)]}`)}`;
         },
@@ -80,6 +81,7 @@ function carFestival() {
                 const shareTags = encodeURIComponent('autosfestival,brummbrumm,deckeGas,SUVchen');
                 this.twitterShareLink = `https://twitter.com/intent/tweet?text=${shareText}&url=${shareUrl}&hashtags=${shareTags}`;
                 this.whatsappShareLink = `whatsapp://send?text=${shareText} ${shareUrl} #autosfestival #brummbrumm #deckeGas #SUVchen`;
+                this.facebookShareLink = `https://www.facebook.com/sharer.php?u=${shareUrl}&t=${shareText}%20${shareUrl}%20%2Cautosfestival%20%2Cbrummbrumm%20%2CdeckeGas%20%2CSUVchen`;
             }
         },
     };

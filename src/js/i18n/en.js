@@ -5,6 +5,7 @@ const en = {
     whatIsThis: 'What the hell is this?',
     shareOnTwitter: 'Share this reason on Twitter!',
     shareOnWhatsApp: 'Share this reason on WhatsApp!',
+    shareOnFacebook: 'Share this reason on Facebook!',
     shareText: "My reason for getting a new car is that %{reason}! What's yours? Find it out on",
     excuses: {
         insecure: "I'm insecure",

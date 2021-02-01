@@ -5,6 +5,7 @@ const lb = {
     whatIsThis: 'Wat der Däiwel ass dat hei?',
     shareOnTwitter: 'Deel dëse Grond op Twitter!',
     shareOnWhatsApp: 'Deel dëse Grond op WhatsApp!',
+    shareOnFacebook: 'Deel dëse Grond op Facebook!',
     shareText: "Mäi Grond fir en neien Auto ass dat %{reason}! And däin? Fann et eraus op",
     excuses: {
         insecure: "ech onsécher sinn",

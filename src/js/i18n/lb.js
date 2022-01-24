@@ -43,6 +43,8 @@ const lb = {
         greens: 'ech gär fueren wëll ier déi verdaamte Gréng alles verbidden',
         continue: 'ech mengen mir kënnen fir ëmmer esou weidermaachen',
         old: "mäin aktuellen SUV schon 2 Joër huet",
+        freecountry: "Lëtzebuerg nach e fräit Land ass",
+        bigspot: "d'Parkplazen am Knuedler méi breet ginn",
     }
 }
 

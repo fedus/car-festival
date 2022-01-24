@@ -43,6 +43,8 @@ const de = {
         greens: 'ich gerne fahre bevor die verdammten Grünen alles verbieten',
         continue: 'ich glaube wir können für immer so weitermachen',
         old: "mein aktueller SUV schon 2 Jahre alt ist",
+        freecountry: "Luxemburg noch ein freies Land ist",
+        bigspot: "die Parkplätze im Knuedler breiter geworden sind",
     }
 }
 

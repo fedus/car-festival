@@ -43,6 +43,8 @@ const en = {
         greens: 'I want to drive before the damn Greens prohibit everything',
         continue: 'I think we can continue like this forever',
         old: "my current SUV is already 2 years old",
+        freecountry: "Luxembourg is still a free country",
+        bigspot: "parking spots have gotten larger at Knuedler",
     }
 }
 

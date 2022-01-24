@@ -43,6 +43,8 @@ const fr = {
         greens: "je veux conduire avant que les Verts n'interdisent tout",
         continue: "je pense qu'on peut continuer comme ça pour toujours",
         old: "mon SUV actuel à déjà 2 ans",
+        freecountry: "le Luxembourg est encore un pays libre",
+        bigspot: "les emplacements sont devenus plus larges au Knuedler",
     }
 }
 

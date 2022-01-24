@@ -6,7 +6,7 @@ const fr = {
     shareOnTwitter: 'Partage cette raison sur Twitter!',
     shareOnWhatsApp: 'Partage cette raison sur WhatsApp!',
     shareOnFacebook: 'Partage cette raison sur Facebook!',
-    shareText: "Voici ma raison d'acheter une nouvelle bagnole: %{reason}! Découvre la tienne sur",
+    shareText: "Voici mon excuse pour acheter une nouvelle bagnole: %{reason}! Découvre la tienne sur",
     excuses: {
         insecure: "je ne suis pas sûr•e de moi",
         money: "j'ai trop d'argent",

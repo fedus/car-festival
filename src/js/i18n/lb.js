@@ -6,7 +6,7 @@ const lb = {
     shareOnTwitter: 'Deel dëse Grond op Twitter!',
     shareOnWhatsApp: 'Deel dëse Grond op WhatsApp!',
     shareOnFacebook: 'Deel dëse Grond op Facebook!',
-    shareText: "Mäi Grond fir en neien Auto ass dat %{reason}! And däin? Fann et eraus op",
+    shareText: "Meng Ausried fir en neien Auto ass dat %{reason}! And deng? Fann et eraus op",
     excuses: {
         insecure: "ech onsécher sinn",
         money: 'ech zevill Suen hunn',

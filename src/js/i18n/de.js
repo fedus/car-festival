@@ -6,7 +6,7 @@ const de = {
     shareOnTwitter: 'Teile diesen Grund auf Twitter!',
     shareOnWhatsApp: 'Teile diesen Grund auf WhatsApp!',
     shareOnFacebook: 'Teile diesen Grund auf Facebook!',
-    shareText: "Mein Grund für ein neues Auto ist dass %{reason}! Und deiner? Finde es heraus auf",
+    shareText: "Meine Ausrede für ein neues Auto ist dass %{reason}! Und deine? Finde es heraus auf",
     excuses: {
         insecure: "ich unsicher bin",
         money: 'ich zu viel Geld habe',
